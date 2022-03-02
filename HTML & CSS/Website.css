@@ -4,6 +4,13 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 
-h1{
-    color: red;
+img.small{
+    width:10%;
+    height:10%;
+}
+
+img.align-right{
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
 }
