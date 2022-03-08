@@ -20,6 +20,18 @@ table{
     border:1px solid;
 }
 
+th, td{
+    text-align: left;
+}
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableadd{
+    border:0px;
+}
+
 .buttonadd{
     background-color: #f5cf14;
     color: white;
@@ -27,4 +39,38 @@ table{
     font-size: 16px;
     float: right;
     
+}
+
+.buttonaddinventory{
+    background-color: #f5cf14;
+    color: white;
+    padding: 10px 40px;
+    font-size: 16px;
+    float: center;
+    
+    
+}
+
+.buttoncancel{
+    background-color: #980B84;
+    color: white;
+    padding: 10px 40px;
+    font-size: 16px;
+    float: center;
+}
+
+.modal-lg {
+    width: 100%;
+  }
+
+.modal-header {
+    background-color: #4FB4B0;
+    padding:16px 16px;
+    color:#FFF;
+}
+
+.modal-dialog{
+    display:inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
