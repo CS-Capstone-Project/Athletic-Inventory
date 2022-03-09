@@ -34,19 +34,20 @@
 <div class="jumbotron text-center">
     <h1>Softball Inventory</h1>
 </div>
+
  <!--table header-->
  <div class="container">
         <p> search bar here</p>
         <!--Trigger the modal-->
         <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
-        <!--Add modal-->
-        <div class="modal modal-lg modal-centered" id="add" role="dialog">
+        <!--Add Clothing modal-->
+        <div class="modal modal-centered" id="add" role="dialog">
             <div class="model-dialog">
-                <!--Add Items-->
+                <!--Add Clothing Items-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type ="button" class="close" data-dismiss="modal">&times;</button>
-                            <h1 class="modal-title">Add Inventory</h1>
+                            <h1 class="modal-title">Add Inventory <i class="fa-solid fa-square-plus"></i></h1>
                         </div>
                             <div class="modal-body">
                                 <div class="table-responsive">
@@ -56,12 +57,6 @@
                                                 <th>Item</th>
                                                 <th>Color</th>
                                                 <th>Price</th>
-                                                <th>S</th>
-                                                <th>M</th>
-                                                <th>L</th>
-                                                <th>XL</th>
-                                                <th>XXL</th>
-                                                <th>Qty</th>
                                                 <th>Date of Purchase</th>
                                             </tr>
                                         </thead>
@@ -72,7 +67,6 @@
                                                         <label for="item"></label>
                                                         <input type="text" id="item" name="item" placeholder="Type description...">
                                                         <input class="form-control" type="file" id="image" name="image" multiple>
-                                                        
                                                     </td>
                                                 </form>
                                                 <form>
@@ -87,6 +81,24 @@
                                                         <input type="text" id="price" name="price" placeholder="Type price...">
                                                     </td>
                                                 </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="date"></label>
+                                                        <input type="date" id="date" name="date" placeholder="Date...">
+                                                    </td>
+                                                </form> 
+                                            </tr>
+                                        </tbody>
+                                                <th>S</th>
+                                                <th>M</th>
+                                                <th>L</th>
+                                                <th>XL</th>
+                                                <th>XXL</th>
+                                                <th>Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
                                                 <form>
                                                     <td>
                                                         <label for="small"></label>
@@ -121,12 +133,6 @@
                                                     <td>
                                                         <label for="quantity"></label>
                                                         <input type="number" id="quantity" name="quantity" placeholder="Quantity...">
-                                                    </td>
-                                                </form>
-                                                <form>
-                                                    <td>
-                                                        <label for="date"></label>
-                                                        <input type="date" id="date" name="date" placeholder="Date...">
                                                     </td>
                                                 </form>
                                             </tr>
@@ -168,7 +174,106 @@
             </tbody>
         </table>
         </div>
-</div>
+
+    <div class="container">
+        <!--Trigger the modal-->
+        <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
+        <!--Add Shoe modal-->
+        <div class="modal modal-centered" id="addshoes" role="dialog">
+            <div class="model-dialog">
+                <!--Add Shoe Items-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type ="button" class="close" data-dismiss="modal">&times;</button>
+                            <h1 class="modal-title">Add Shoes <i class="fa-solid fa-square-plus"></i></h1>
+                        </div>
+                            <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table tableadd">
+                                        <thead>
+                                            <tr>
+                                                <th>Item</th>
+                                                <th>Color</th>
+                                                <th>Price</th>
+                                                <th>Date of Purchase</th>
+                                                <th>Size</th>
+                                                <th>Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <form>
+                                                    <td>
+                                                        <label for="item"></label>
+                                                        <input type="text" id="item" name="item" placeholder="Type description...">
+                                                        <input class="form-control" type="file" id="image" name="image" multiple>
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="color"></label>
+                                                        <input type="text" id="color" name="color" placeholder="Type color...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="price"></label>
+                                                        <input type="text" id="price" name="price" placeholder="Type price...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="date"></label>
+                                                        <input type="date" id="date" name="date" placeholder="Date...">
+                                                    </td>
+                                                </form> 
+                                                <form>
+                                                    <td>
+                                                        <label for="size"></label>
+                                                        <input type="number" id="size" name="size" placeholder="Size...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="quantity"></label>
+                                                        <input type="number" id="quantity" name="quantity" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-md-12 text-center">
+                                    <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
+                                    <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel <i class="fa-solid fa-rectangle-xmark"></i></button> 
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <!--Shoe Inventory-->
+        <h1>Shoes</h1>
+        <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                    <th>Size</th>
+                    <th>Qty</th>
+                    <th>Date of Purchase</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
 <hr>
 
 <hr>
