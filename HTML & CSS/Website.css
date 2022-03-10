@@ -4,10 +4,9 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 
-/* To change the logo size */
 img.small{
     width:10%;
-    height:10%;
+    height:5%;
 }
 
 img.align-right{
@@ -16,7 +15,6 @@ img.align-right{
     margin-left: 15px;
     margin-right: 15px;
 }
-
 table{
     width:70%;
     border:1px solid;
@@ -25,49 +23,42 @@ table{
 th, td{
     text-align: left;
 }
-
 table.center{
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Table after you hit add*/
 .tableadd{
     border:0px;
 }
 
-/* button when adding items*/
 .buttonadd{
     background-color: #f5cf14;
     color: white;
     padding: 10px 24px;
     font-size: 16px;
-    float: right; 
+    float: right;    
 }
 
-/* Button to confirm to add the inventory*/
 .buttonaddinventory{
     background-color: #f5cf14;
     color: white;
-    padding: 10px 70px;
-    font-size: 18px;
-    float: center;  
+    padding: 10px 40px;
+    font-size: 16px;
+    float: center;    
 }
 
-/* Button to confirm to cancel adding to the inventory*/
 .buttoncancel{
     background-color: #980B84;
     color: white;
-    padding: 10px 60px;
-    font-size: 18px;
+    padding: 10px 40px;
+    font-size: 16px;
     float: center;
 }
 
-.modal {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-}
+.modal-lg {
+    width: 100%;
+  }
 
 .modal-header {
     background-color: #4FB4B0;
