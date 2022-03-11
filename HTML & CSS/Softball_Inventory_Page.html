@@ -20,6 +20,7 @@
 
 <!--import fontawesome-->
 <script src="https://kit.fontawesome.com/a2507bf492.js" crossorigin="anonymous"></script>
+
 <!--CSS File Link-->
 <link rel="stylesheet" href="Website.css">
 
@@ -37,7 +38,9 @@
 
  <!--table header-->
  <div class="container">
-        <p> search bar here</p>
+     <!--connect to php file here with a form-->
+    <input type="text" placeholder="Search Inventory..." name="search">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         <!--Trigger the modal-->
         <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
         <!--Add Clothing modal-->
@@ -62,11 +65,17 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <form>
+                                                <!--input picture
+                                                    <form>
+                                                    <td>
+                                                        <label for="image"></label>
+                                                        <input class="form-control" type="file" id="image" name="image">
+                                                    </td>
+                                                </form>
+                                                <form> -->
                                                     <td>
                                                         <label for="item"></label>
                                                         <input type="text" id="item" name="item" placeholder="Type description...">
-                                                        <input class="form-control" type="file" id="image" name="image" multiple>
                                                     </td>
                                                 </form>
                                                 <form>
@@ -142,8 +151,8 @@
                             </div>
                             <div class="modal-footer">
                                 <div class="col-md-12 text-center">
-                                    <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
-                                    <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel <i class="fa-solid fa-rectangle-xmark"></i></button> 
+                                    <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#add">Add<i class="fa-solid fa-square-plus"></i></button>
+                                    <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel<i class="fa-solid fa-rectangle-xmark"></i></button> 
                                 </div>
                             </div>
                     </div>
@@ -170,118 +179,249 @@
             </thead>
             <tbody>
                 <tr>
+                    <!--Items will get added here-->
                 </tr>
             </tbody>
         </table>
         </div>
+ </div>
 
-    <div class="container">
-        <!--Trigger the modal-->
-        <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
-        <!--Add Shoe modal-->
-        <div class="modal modal-centered" id="addshoes" role="dialog">
-            <div class="model-dialog">
-                <!--Add Shoe Items-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type ="button" class="close" data-dismiss="modal">&times;</button>
-                            <h1 class="modal-title">Add Shoes <i class="fa-solid fa-square-plus"></i></h1>
-                        </div>
-                            <div class="modal-body">
-                                <div class="table-responsive">
-                                    <table class="table tableadd">
-                                        <thead>
-                                            <tr>
-                                                <th>Item</th>
-                                                <th>Color</th>
-                                                <th>Price</th>
-                                                <th>Date of Purchase</th>
-                                                <th>Size</th>
-                                                <th>Qty</th>
+<!--table header-->
+<div class="container">
+    <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#addshoe">Add<i class="fa-solid fa-square-plus"></i></button>
+       <!--Add Shoe modal-->
+       <div class="modal modal-centered" id="addshoe" role="dialog">
+           <div class="model-dialog">
+               <!--Add Shoe Items-->
+                   <div class="modal-content">
+                       <div class="modal-header">
+                           <button type ="button" class="close" data-dismiss="modal">&times;</button>
+                           <h1 class="modal-title">Add Inventory <i class="fa-solid fa-square-plus"></i></h1>
+                       </div>
+                           <div class="modal-body">
+                               <div class="table-responsive">
+                                   <table class="table tableadd">
+                                       <thead>
+                                           <tr>
+                                               <th>Item</th>
+                                               <th>Color</th>
+                                               <th>Price</th>
+                                               <th>Date of Purchase</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               <!--input picture
+                                                   <form>
+                                                   <td>
+                                                       <label for="imageshoe"></label>
+                                                       <input class="form-control" type="file" id="imageshoe" name="imageshoe">
+                                                   </td>
+                                               </form> -->
+                                               <form>
+                                                   <td>
+                                                       <label for="itemshoe"></label>
+                                                       <input type="text" id="itemshoe" name="itemshoe" placeholder="Type description...">
+                                                   </td>
+                                               </form>
+                                               <form>
+                                                   <td>
+                                                       <label for="colorshoe"></label>
+                                                       <input type="text" id="colorshoe" name="colorshoe" placeholder="Type color...">
+                                                   </td>
+                                               </form>
+                                               <form>
+                                                   <td>
+                                                       <label for="priceshoe"></label>
+                                                       <input type="text" id="priceshoe" name="priceshoe" placeholder="Type price...">
+                                                   </td>
+                                               </form>
+                                               <form>
+                                                   <td>
+                                                       <label for="dateshoe"></label>
+                                                       <input type="date" id="dateshoe" name="dateshoe" placeholder="Date...">
+                                                   </td>
+                                               </form> 
+                                           </tr>
+                                       </tbody>
+                                       <thead>
+                                           <tr>
+                                                <th>6</th>
+                                                <th>6.5</th>
+                                                <th>7</th>
+                                                <th>7.5</th>
+                                                <th>8</th>
+                                                <th>8.5</th>
+                                                <th>9</th>
+                                                <th>9.5</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               <form>
+                                                   <td>
+                                                       <label for="six"></label>
+                                                       <input type="number" id="six" name="six" placeholder="Quantity...">
+                                                   </td>
+                                               </form>
+                                               <form>
+                                                    <td>
+                                                        <label for="sixhalf"></label>
+                                                        <input type="number" id="sixhalf" name="sixhalf" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="seven"></label>
+                                                        <input type="number" id="seven" name="seven" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="sevenhalf"></label>
+                                                        <input type="number" id="sevenhalf" name="sevenhalf" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="eight"></label>
+                                                        <input type="number" id="eight" name="eight" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="eighthalf"></label>
+                                                        <input type="number" id="eighthalf" name="eighthalf" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="nine"></label>
+                                                        <input type="number" id="nine" name="nine" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="ninehalf"></label>
+                                                        <input type="number" id="ninehalf" name="ninehalf" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
                                             </tr>
-                                        </thead>
+                                       </tbody>
+                                                <thead>
+                                                    <tr>
+                                                        <th>10</th>
+                                                        <th>10.5</th>
+                                                        <th>11</th>
+                                                        <th>11.5</th>
+                                                        <th>12</th>
+                                                        <th>Other</th>
+                                                        <th>Qty</th>
+                                                    </tr>
+                                                </thead>
                                         <tbody>
                                             <tr>
                                                 <form>
                                                     <td>
-                                                        <label for="item"></label>
-                                                        <input type="text" id="item" name="item" placeholder="Type description...">
-                                                        <input class="form-control" type="file" id="image" name="image" multiple>
+                                                        <label for="ten"></label>
+                                                        <input type="number" id="ten" name="ten" placeholder="Quantity...">
                                                     </td>
                                                 </form>
                                                 <form>
                                                     <td>
-                                                        <label for="color"></label>
-                                                        <input type="text" id="color" name="color" placeholder="Type color...">
+                                                        <label for="tenhalf"></label>
+                                                        <input type="number" id="tenhalf" name="tenhalf" placeholder="Quantity...">
                                                     </td>
                                                 </form>
                                                 <form>
                                                     <td>
-                                                        <label for="price"></label>
-                                                        <input type="text" id="price" name="price" placeholder="Type price...">
+                                                        <label for="eleven"></label>
+                                                        <input type="number" id="eleven" name="eleven" placeholder="Quantity...">
                                                     </td>
                                                 </form>
                                                 <form>
                                                     <td>
-                                                        <label for="date"></label>
-                                                        <input type="date" id="date" name="date" placeholder="Date...">
+                                                        <label for="elevenhalf"></label>
+                                                        <input type="number" step="0.5" id="elevenhalf" name="elevenhalf" placeholder="Quantity...">
+                                                    </td>
+                                                </form>
+                                                <form>
+                                                    <td>
+                                                        <label for="twelve"></label>
+                                                        <input type="number" id="twelve" name="twelve" placeholder="Quantity...">
                                                     </td>
                                                 </form> 
                                                 <form>
                                                     <td>
-                                                        <label for="size"></label>
-                                                        <input type="number" id="size" name="size" placeholder="Size...">
+                                                        <label for="other"></label>
+                                                        <input type="text" id="other" name="other" placeholder="Other...">
                                                     </td>
                                                 </form>
                                                 <form>
                                                     <td>
-                                                        <label for="quantity"></label>
-                                                        <input type="number" id="quantity" name="quantity" placeholder="Quantity...">
+                                                        <label for="quantityshoe"></label>
+                                                        <input type="number" id="quantityshoe" name="quantityshoe" placeholder="Quantity...">
                                                     </td>
                                                 </form>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    </div>
-                            </div>
-                            <div class="modal-footer">
-                                <div class="col-md-12 text-center">
-                                    <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
-                                    <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel <i class="fa-solid fa-rectangle-xmark"></i></button> 
-                                </div>
-                            </div>
-                    </div>
-            </div>
-        </div>
-        <!--Shoe Inventory-->
-        <h1>Shoes</h1>
-        <div class="table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Color</th>
-                    <th>Price</th>
-                    <th>Size</th>
-                    <th>Qty</th>
-                    <th>Date of Purchase</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-    </div>
-<hr>
+                                           </tr>
+                                       </tbody>
+                                   </table>
+                                   </div>
+                           </div>
+                           <div class="modal-footer">
+                               <div class="col-md-12 text-center">
+                                   <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#add">Add<i class="fa-solid fa-square-plus"></i></button>
+                                   <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel<i class="fa-solid fa-rectangle-xmark"></i></button> 
+                               </div>
+                           </div>
+                   </div>
+           </div>
+       </div>
 
+    <br>
+
+    <!--Inventory Table-->
+    <h1>Shoes</h1>
+    <div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>6</th>
+                <th>6.5</th>
+                <th>7</th>
+                <th>7.5</th>
+                <th>8</th>
+                <th>8.5</th>
+                <th>9</th>
+                <th>9.5</th>
+                <th>10</th>
+                <th>10.5</th>
+                <th>11</th>
+                <th>11.5</th>
+                <th>12</th>
+                <th>Other</th>
+                <th>Qty</th>
+                <th>Date of Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--Items will get added here-->
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+   
 <hr>
 
 <!--Must be at the bottom of every page-->
 <footer class="container-fluid text-center">
     <p>&copy; Copyright of CS Capstone Project 2022 V.1.0</p>
-  </footer>
+</footer>
 
 </body>
 </html>
