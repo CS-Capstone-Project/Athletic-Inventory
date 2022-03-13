@@ -26,7 +26,7 @@ table, th, td{
     text-align: left;
 }
 
-.tableadd{
+.tableadd, .tableedit{
     border:0px;
 }
 
@@ -55,11 +55,43 @@ table, th, td{
 }
 
 .buttonedit{
-    background: #A02E5F;
+    background: #4FB4B0;
     color: white;
-    padding: 10px 24px;
+    padding: 10px 30px;
     font-size: 16px;
     float: right; 
+}
+
+.buttoneditinventory{
+    background: #4FB4B0;
+    color: white;
+    padding: 10px 48px;
+    font-size: 16px;
+    float: center; 
+}
+
+.buttondelete{
+    background: #f5cf14;
+    color: white;
+    padding: 10px 48px;
+    font-size: 16px;
+    float: center; 
+}
+
+.buttonyes{
+    background: #f5cf14;
+    color: white;
+    padding: 10px 48px;
+    font-size: 16px;
+    float: center;
+}
+
+.buttonno{
+    background-color: #980B84;
+    color: white;
+    padding: 10px 40px;
+    font-size: 16px;
+    float: center;
 }
 
 .modal {
@@ -78,4 +110,20 @@ table, th, td{
     display:inline-block;
     text-align: left;
     vertical-align: middle;
+}
+
+.modal-backdrop {
+    visibility: hidden !important;
+}
+
+.modal.in {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal:nth-of-type(even) {
+    z-index: 1052 !important;
+}
+
+.modal-backdrop.show:nth-of-type(even) {
+    z-index: 1051 !important;
 }

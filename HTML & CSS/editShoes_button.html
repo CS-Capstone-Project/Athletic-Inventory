@@ -1,0 +1,223 @@
+<!--FileDot edit button-->
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8"/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Edit Shoes Button </title>
+
+<!--imports google font-->
+<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+
+<!--imports bootstrap3 and jquery-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!--imports toastr-->
+<link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+
+<!--import fontawesome-->
+<script src="https://kit.fontawesome.com/a2507bf492.js" crossorigin="anonymous"></script>
+
+<!--CSS File Link-->
+<link rel="stylesheet" href="Website.css">
+
+<style>
+
+</style>
+</head>
+<body>
+    <br>
+
+<!--edit clothing button-->
+<div class="container">
+    <button type="button" class="btn buttonedit" data-toggle="modal" data-target="#editshoes">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+    <!--Edit Clothing Modal-->
+    <div class="modal modal-centered" id="editshoes" role="dialog">
+        <div clas="modal-dialog">
+            <!--Edit Clothing-->
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type ="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title">Edit Inventory <i class="fa-solid fa-pen-to-square"></i></h1>
+                    </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table tableedit">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Color</th>
+                                    <th>Price</th>
+                                    <th>Date of Purchase</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <form>
+                                    <td>
+                                        <label for="itemeditshoes"></label>
+                                        <input type="text" id="itemeditshoes" name="itemeditshoes" placeholder="Type description...">
+                                    </td>
+                                </form>
+                                <form>
+                                    <td>
+                                        <label for="coloreditshoes"></label>
+                                        <input type="text" id="coloreditshoes" name="coloreditshoes" placeholder="Type color...">
+                                    </td>
+                                </form>
+                                <form>
+                                    <td>
+                                        <label for="priceeditshoes"></label>
+                                        <input type="text" id="priceeditshoes" name="priceeditshoes" placeholder="Type price...">
+                                    </td>
+                                </form>
+                                <form>
+                                    <td>
+                                        <label for="dateeditshoes"></label>
+                                        <input type="date" id="dateeditshoes" name="dateeditshoes" placeholder="Date...">
+                                    </td>
+                                </form>    
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th>6</th>
+                                    <th>6.5</th>
+                                    <th>7</th>
+                                    <th>7.5</th>
+                                    <th>8</th>
+                                    <th>8.5</th>
+                                    <th>9</th>
+                                    <th>9.5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <form>
+                                        <td>
+                                            <label for="sixeditshoes"></label>
+                                            <input type="number" id="sixeditshoes" name="sixeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="sixhalfeditshoes"></label>
+                                            <input type="number" id="sixhalfeditshoes" name="sixhalfeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="seveneditshoes"></label>
+                                            <input type="number" id="seveneditshoes" name="seveneditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="sevenhalfeditshoes"></label>
+                                            <input type="number" id="sevenhalfeditshoes" name="sevenhalfeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="eighteditshoes"></label>
+                                            <input type="number" id="eighteditshoes" name="eighteditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="eighthalfeditshoes"></label>
+                                            <input type="number" id="eighthalfeditshoes" name="eighthalfeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="nineeditshoes"></label>
+                                            <input type="number" id="nineeditshoes" name="nineeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="ninehalfeditshoes"></label>
+                                            <input type="number" id="ninehalfeditshoes" name="ninehalfeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <thead>
+                                        <tr>
+                                            <th>10</th>
+                                            <th>10.5</th>
+                                            <th>11</th>
+                                            <th>11.5</th>
+                                            <th>12</th>
+                                            <th>other</th>
+                                            <th>Qty</th>
+                                        </tr>
+                                    </thead>
+                                    <form>
+                                        <td>
+                                            <label for="teneditshoes"></label>
+                                            <input type="number" id="teneditshoes" name="teneditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="tenhalfeditshoes"></label>
+                                            <input type="number" id="tenhalfeditshoes" name="tenhalfeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="eleveneditshoes"></label>
+                                            <input type="number" id="eleveneditshoes" name="eleveneditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="elevenhalfeditshoes"></label>
+                                            <input type="number" id="elevenhalfeditshoes" name="elevenhalfeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="twelveeditshoes"></label>
+                                            <input type="number" id="twelveeditshoes" name="twelveeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="othereditshoes"></label>
+                                            <input type="text" id="othereditshoes" name="othereditshoes" placeholder="Other...">
+                                        </td>
+                                    </form>
+                                    <form>
+                                        <td>
+                                            <label for="quantityeditshoes"></label>
+                                            <input type="number" id="quantityeditshoes" name="quantityeditshoes" placeholder="Quantity...">
+                                        </td>
+                                    </form>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md12 text-center">
+                        <button type="button" class="btn buttoneditinventory" data-toggle="modal" data-target="#editshoes">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel <i class="fa-solid fa-rectangle-xmark"></i></button> 
+                        <button type="button" class="btn buttondelete" data-toggle="modal">Delete <i class="fa-solid fa-trash-can"></i></button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+
+<br>
+
+</body>
+</html>
