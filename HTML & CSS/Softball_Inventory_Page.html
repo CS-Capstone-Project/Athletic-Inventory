@@ -31,18 +31,21 @@
 
 <body>
 <!--Logo must be on everypage-->
-<img src="FileDotLogo_01.png" class="align-right small" alt="FileDot Logo">
-<div class="jumbotron text-center">
-    <h1>Softball Inventory</h1>
+<img src="Logo-01.png" class="align-right small" alt="FileDot Logo">
+<!--logout button-->
+<button type="button" class="btn buttonlogout">log out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+<div class="jumbotron">
+    <h1 align="text-center">Softball Inventory</h1>
 </div>
 
- <!--table header-->
  <div class="container">
-     <!--connect to php file here with a form-->
+    <!--connect to php file here with a form-->
+    <div align="left">
     <input type="text" placeholder="Search Inventory..." name="search">
     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         <!--Trigger the modal-->
-        <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add" >Add <i class="fa-solid fa-square-plus"></i></button>
+        <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add">Add <i class="fa-solid fa-square-plus"></i></button>
+    </div>
         <!--Add Clothing modal-->
         <div class="modal modal-centered" id="add" role="dialog">
             <div class="model-dialog">
@@ -161,7 +164,7 @@
         </div>
         <br>
         <!--Inventory Table-->
-        <h1>Clothing</h1>
+        <h1 align="left">Clothing</h1>
         <div class="table-responsive">
         <table class="table">
             <thead>
@@ -371,7 +374,7 @@
                            </div>
                            <div class="modal-footer">
                                <div class="col-md-12 text-center">
-                                   <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#add">Add <i class="fa-solid fa-square-plus"></i></button>
+                                   <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#addshoe">Add <i class="fa-solid fa-square-plus"></i></button>
                                    <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel <i class="fa-solid fa-rectangle-xmark"></i></button> 
                                </div>
                            </div>
@@ -382,7 +385,7 @@
     <br>
 
     <!--Inventory Table-->
-    <h1>Shoes</h1>
+    <h1 align="left">Shoes</h1>
     <div class="table-responsive">
     <table class="table">
         <thead>
@@ -426,7 +429,7 @@
                <!--Add Miscellaneous Items-->
                    <div class="modal-content">
                        <div class="modal-header">
-                           <button type ="button" class="close" data-dismiss="modal">&times;</button>
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
                            <h1 class="modal-title">Add Inventory <i class="fa-solid fa-square-plus"></i></h1>
                        </div>
                            <div class="modal-body">
@@ -494,7 +497,7 @@
                            </div>
                            <div class="modal-footer">
                                <div class="col-md-12 text-center">
-                                   <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#add">Add <i class="fa-solid fa-square-plus"></i></button>
+                                   <button type="button" class="btn buttonaddinventory" data-toggle="modal" data-target="#addmisc">Add <i class="fa-solid fa-square-plus"></i></button>
                                    <button type="button" class="btn buttoncancel" data-dismiss="modal">Cancel <i class="fa-solid fa-rectangle-xmark"></i></button> 
                                </div>
                            </div>
@@ -505,7 +508,7 @@
     <br>
 
     <!--Inventory Table-->
-    <h1>Miscellaneous</h1>
+    <h1 align="left">Miscellaneous</h1>
     <div class="table-responsive">
     <table class="table">
         <thead>

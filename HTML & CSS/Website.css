@@ -2,11 +2,11 @@
 
 body{
     font-family: 'Bebas Neue', cursive;
+    text-align: center;
 }
 
 img.small{
-    width:10%;
-    height:5%;
+    width: 250px;
 }
 
 img.align-right{
@@ -16,10 +16,12 @@ img.align-right{
     margin-right: 15px;
 }
 
+.faviconlogo {
+    width:40px;
+}
+
 table{
-   
     border: 1px solid;
-   
 }
 
 table, th, td{
@@ -30,6 +32,13 @@ table, th, td{
     border:0px;
 }
 
+.buttonlogout{
+    background-color: #980B84;
+    color: white;
+    padding: 10px 40px;
+    font-size: 16px;
+    float: right;
+}
 .buttonadd{
     background-color: #f5cf14;
     color: white;
@@ -95,18 +104,21 @@ table, th, td{
 }
 
 .modal {
-    padding-left: 5%;
-    padding-right: 5%;
+    width:auto;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 10%;
   }
 
 .modal-header {
     background-color: #4FB4B0;
+    text-align: left;
     padding:16px 16px;
     color:#FFF;
 }
 
-.modal-dialog{
+.modal-dialog {
+    width: 90%;
     display:inline-block;
     text-align: left;
     vertical-align: middle;
@@ -126,4 +138,11 @@ table, th, td{
 
 .modal-backdrop.show:nth-of-type(even) {
     z-index: 1051 !important;
+}
+
+/*delete Modal*/
+#deleteclothing {
+    padding-left:auto;
+    padding-right:auto;
+    vertical-align: middle;
 }
