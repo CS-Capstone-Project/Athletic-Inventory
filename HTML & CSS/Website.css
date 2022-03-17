@@ -6,18 +6,21 @@ body{
 }
 
 img.small{
-    width: 250px;
+    width: 200px;
 }
 
 img.align-right{
     float: right;
-    margin-top:15px;
+    margin-top:5px;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .faviconlogo {
-    width:40px;
+    width:16px;
+}
+.well-lg{
+    padding:50px;
 }
 
 table{
@@ -32,12 +35,26 @@ table, th, td{
     border:0px;
 }
 
+.tablelogo{
+    margin:15px;
+    border:0px;
+    float:right;
+}
+
 .buttonlogout{
     background-color: #980B84;
     color: white;
+    margin-left: 25%;
+    padding: 10px 30px;
+    font-size: 16px;
+}
+
+.buttonBack{
+    background-color: #4FB4B0;
+    color: white;
+    margin-bottom: 10px;
     padding: 10px 40px;
     font-size: 16px;
-    float: right;
 }
 .buttonadd{
     background-color: #f5cf14;

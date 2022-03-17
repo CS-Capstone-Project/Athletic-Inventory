@@ -29,24 +29,40 @@
 
 </style>
 </head>
-
 <body>
-<!--Logo must be on everypage-->
-<img src="Logo-01.png" class="align-right small" alt="FileDot Logo">
-<!--logout button-->
-<button type="button" class="btn buttonlogout">log out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
-<div class="jumbotron">
-    <h1 align="text-center">Softball Inventory</h1>
+    
+<table class="tablelogo">
+    <tr>
+        <td>
+            <div>
+            <!--Logo must be on everypage-->
+            <img src="Logo-01.png" class="align-right small" alt="FileDot Logo">
+        </div>    
+        <div>
+            <!--logout button-->
+            <button type="button" class="btn buttonlogout">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        </div>
+        </td>
+    </tr>
+</table>
+
+<div class="well well-lg">
+    <h1 align="text-center" style="font-size:5vw;">Softball Inventory</h1>
 </div>
 
- <div class="container">
+<div class="container">
+    <div align="left">
+        <!--Back Button-->
+        <button type="button" class="btn buttonBack">Back <i class="fa-solid fa-square-caret-left"></i></button>
+    </div> 
     <!--connect to php file here with a form-->
     <div align="left">
-    <input type="text" placeholder="Search Inventory..." name="search">
-    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <!--Trigger the modal-->
-        <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add">Add <i class="fa-solid fa-square-plus"></i></button>
+        <input type="text" placeholder="Search Inventory..." name="search">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>  
     </div>
+
+    <!--Trigger the modal-->
+    <button type="button" class="btn buttonadd" data-toggle="modal" data-target="#add">Add <i class="fa-solid fa-square-plus"></i></button>
         <!--Add Clothing modal-->
         <div class="modal modal-centered" id="add" role="dialog">
             <div class="model-dialog">
@@ -167,27 +183,27 @@
         <!--Inventory Table-->
         <h1 align="left">Clothing</h1>
         <div class="table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Color</th>
-                    <th>Price</th>
-                    <th>S</th>
-                    <th>M</th>
-                    <th>L</th>
-                    <th>XL</th>
-                    <th>XXL</th>
-                    <th>Qty</th>
-                    <th>Date of Purchase</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <!--Items will get added here-->
-                </tr>
-            </tbody>
-        </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Color</th>
+                        <th>Price</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                        <th>XXL</th>
+                        <th>Qty</th>
+                        <th>Date of Purchase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!--Items will get added here-->
+                    </tr>
+                </tbody>
+            </table>
         </div>
  </div>
 
