@@ -182,8 +182,18 @@ table, th, td{
     clear: both;
   }
 
-  .sportButton{
-    background-color: #980B84;
+  .sportButton {
+    margin:10px;   
+    background-color: #DC3657;
+    color: white;
+    padding: 40px 40px 40px 40px;
+    font-size: 30px;
+    float: center;
+  }
+
+  .sportButton1 {
+    margin:10px;
+    background-color: #4FB4B0;
     color: white;
     padding: 40px 40px 40px 40px;
     font-size: 30px;
