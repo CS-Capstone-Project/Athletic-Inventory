@@ -23,6 +23,7 @@ img.align-right{
 .faviconlogo {
     width:16px;
 }
+
 .well-lg{
     padding:50px;
 }
@@ -45,6 +46,7 @@ table, th, td{
     float:right;
 }
 
+/*Buttons*/
 .buttonlogout{
     background-color: #980B84;
     color: white;
@@ -124,6 +126,29 @@ table, th, td{
     float: center;
 }
 
+.sportButtonWomen {
+    text-align: center;
+    margin:8px;   
+    background-color: #DC3657;
+    color: white;
+    font-size: 30px;
+    float: center;
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+.sportButtonMen {
+    text-align: center;
+    margin:8px;
+    background-color: #4FB4B0;
+    color: white;
+    font-size: 30px;
+    float: center;  
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+/*Modals*/
 .modal {
     width:auto;
     padding-left: 3%;
@@ -176,26 +201,8 @@ table, th, td{
   }
   
   /* Clear floats after the columns */
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
-  .sportButton {
-    margin:10px;   
-    background-color: #DC3657;
-    color: white;
-    padding: 40px 40px 40px 40px;
-    font-size: 30px;
-    float: center;
-  }
-
-  .sportButton1 {
-    margin:10px;
-    background-color: #4FB4B0;
-    color: white;
-    padding: 40px 40px 40px 40px;
-    font-size: 30px;
-    float: center;
   }
