@@ -20,6 +20,11 @@ img.align-right{
     margin-right: 15px;
 }
 
+.loginHeader{
+    background-color:rbg(255, 122, 89)!important;
+    align-items: center;
+}
+
 .faviconlogo {
     width:16px;
 }
