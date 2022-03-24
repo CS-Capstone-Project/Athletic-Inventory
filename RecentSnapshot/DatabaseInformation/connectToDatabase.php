@@ -1,5 +1,5 @@
 <?php
-include_once 'imports.php';
+
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
