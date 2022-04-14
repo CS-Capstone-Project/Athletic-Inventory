@@ -1,0 +1,76 @@
+/*Login Page CSS*/
+
+body{
+    background-image: url('Website_Login_Background-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100%;
+    box-shadow: inset 0 0 99999px rgba(97, 5, 92, 0.5)
+  }
+
+  h1, h2, button{
+    font-family: 'Bebas Neue', cursive;
+}
+
+img.small{
+    width: 200px;
+}
+
+img.align-right{
+    float: right;
+    margin-top:5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} 
+
+.loginHeader{
+    text-align: center;
+    color:#333333;
+}
+
+.loginBox{
+    text-align: center;
+    color:#333333;
+    background: rgba(255, 255, 255, .8);
+    padding:15px;
+}
+
+.loginButton{
+    background-color: #980B84;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-bottom:15px;
+}
+
+.loginView{
+    background-color: #f5cf14;;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-bottom:15px;
+}
+
+.faviconlogo {
+    width:16px;
+}
+
+.well-lg{
+    padding:50px;
+}
+
+.tablelogo{
+    margin:15px;
+    border:0px;
+    float:right;
+}
