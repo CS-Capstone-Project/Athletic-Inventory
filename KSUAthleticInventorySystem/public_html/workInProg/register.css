@@ -1,0 +1,65 @@
+/*FileDot Design*/
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1, h2, button{
+    font-family: 'Bebas Neue', cursive;
+}
+
+img.small{
+    width: 200px;
+}
+
+img.align-right{
+    float: right;
+    margin-top:5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+table{
+    border: 1px solid;
+}
+
+table, th, td{
+    text-align: left;
+}
+
+.well-lg{
+    padding:25px;
+}
+
+div{
+    float:center;
+    margin: 10px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 50%;
+    padding:12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} 
+/*Buttons*/
+.buttonBack{
+    background-color: #4FB4B0;
+    color: white;
+    margin:1%;
+    padding: 10px 40px;
+    font-size: 16px;
+    float:left;
+    border:none;
+}
+
+.submitButton {
+    background-color: #980B84;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin:10px;
+    border:none;
+}
