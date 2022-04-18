@@ -96,15 +96,35 @@ table, th, td{
     border:none;
 }
 
-.buttonedit{
+/*edit button in the table*/
+.buttoneditclothing{
     background: #4FB4B0;
     color: white;
     padding: 10px 30px;
-    font-size: 16px;
+    font-size: 12px;
     float: center; 
     border:none;
 }
 
+.buttoneditshoes{
+    background: #4FB4B0;
+    color: white;
+    padding: 10px 30px;
+    font-size: 12px;
+    float: center; 
+    border:none;
+}
+
+.buttoneditmisc{
+    background: #4FB4B0;
+    color: white;
+    padding: 10px 30px;
+    font-size: 12px;
+    float: center; 
+    border:none;
+}
+
+/*edit button in modal*/
 .buttoneditinventory{
     background: #f5cf14;
     color: white;
@@ -222,3 +242,24 @@ table, th, td{
     display: table;
     clear: both;
   }
+.buttonAdmin{
+    background-color: #f5cf14;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    border:none;
+}
+/* Used for admin page buttons */
+.buttonBk{
+    background-color:  #980B84;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    border:none;
+}
+.buttonSearch{
+	width: 30px;
+        height: 27px;
+}

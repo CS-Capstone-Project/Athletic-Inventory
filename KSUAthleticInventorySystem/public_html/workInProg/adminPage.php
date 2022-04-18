@@ -50,6 +50,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['moveToDelete']))
 
 <html>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="Website.css">
 <body>
 <table class="tablelogo">
     <tr>
@@ -62,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['moveToDelete']))
             </form>
             <!--logout button-->
             <form method = 'post' action = 'index.php'>
-              <button type="submit" class="btn buttonlogout" name="logout">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+              <button type="submit" class="btn buttonBk" name="logout">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
             </form>
         </div>
         </td>
@@ -112,13 +113,13 @@ if (mysqli_num_rows($result) > 0) {
              
                      else if ($row["perm"] == 1) { ?>
                     <form method = 'post' action = 'adminPage.php'>
-                    <input type = 'submit' name = 'changeToManager' value = 'Make Manager'>
+                    <button type = 'submit' name = 'changeToManager' class="btn buttonBack" value = 'Make Manager'>Make Manager </button>
                     <input type='hidden' id='accountID' name='accountID' value= <?php echo $row['id'];?> >
                     </form>
              <?php }
                     else { ?>
                     <form method = 'post' action = 'adminPage.php'>
-                    <input type = 'submit' name = 'changeToAdmin' value = 'Make Admin'>
+                    <button type = 'submit' name = 'changeToAdmin' class="btn buttonAdmin" value = 'Make Admin'>Make Admin </button>
                     <input type='hidden' id='accountID' name='accountID' value= <?php echo $row['id'];?> >
                     </form>
              <?php } ?>
@@ -148,12 +149,12 @@ if (mysqli_num_rows($result2) > 0) {
           <td><?php echo $row["email"];?></td>
 
           <td>              <form method = 'post' action = 'adminPage.php'>
-                            <input type = 'submit' name = 'denyAcct' value = 'Deny Request'>
+                            <button type = 'submit' name = 'denyAcct' class="btn buttondelete" value = 'Deny Request'>Deny Request </button>
                             <input type='hidden' id='accountID' name='accountID' value= <?php echo $row['id'];?> >
                             </form></td>
 
           <td>              <form method = 'post' action = 'adminPage.php'>
-                            <input type = 'submit' name = 'acceptAcct' value = 'Approve Request'>
+                            <button type = 'submit' name = 'acceptAcct' class="btn buttonBack" value = 'Approve Request'>Approve Request </button>
                             <input type='hidden' id='accountID2' name='accountID2' value= <?php echo $row['id'];?> > 
                             </form></td>
       </tr><?php
@@ -183,7 +184,7 @@ if (mysqli_num_rows($result3) > 0) {
           <td><?php echo $row["email"];?></td>
 
           <td>              <form method = 'post' action = 'adminPage.php'>
-                            <input type = 'submit' name = 'reinstateAccount' value = 'Reinstate Account'>
+                            <button type = 'submit' name = 'reinstateAccount' class="btn buttonBack" value = 'Reinstate Account'>Reinstate Account </button>
                             <input type='hidden' id='accountID' name='accountID' value= <?php echo $row['account_id'];?> >
                             </form></td>
 
