@@ -58,6 +58,7 @@ table, th, td{
     margin-left: 25%;
     padding: 10px 30px;
     font-size: 16px;
+    border:none;
 }
 
 .buttonBack{
@@ -66,6 +67,7 @@ table, th, td{
     margin-bottom: 10px;
     padding: 10px 40px;
     font-size: 16px;
+    border:none;
 }
 .buttonadd{
     background-color: #f5cf14;
@@ -73,6 +75,7 @@ table, th, td{
     padding: 10px 24px;
     font-size: 16px;
     float: right;    
+    border:none;
 }
 
 .buttonaddinventory{
@@ -80,39 +83,64 @@ table, th, td{
     color: white;
     padding: 10px 40px;
     font-size: 16px;
-    float: center;    
+    float: center;
+    border:none;
 }
 
 .buttoncancel{
-    background-color: #980B84;
+    background-color: #4FB4B0;
     color: white;
     padding: 10px 40px;
     font-size: 16px;
     float: center;
+    border:none;
 }
 
-.buttonedit{
+/*edit button in the table*/
+.buttoneditclothing{
     background: #4FB4B0;
     color: white;
     padding: 10px 30px;
-    font-size: 16px;
-    float: right; 
+    font-size: 12px;
+    float: center; 
+    border:none;
 }
 
-.buttoneditinventory{
+.buttoneditshoes{
     background: #4FB4B0;
     color: white;
-    padding: 10px 48px;
-    font-size: 16px;
+    padding: 10px 30px;
+    font-size: 12px;
     float: center; 
+    border:none;
 }
 
-.buttondelete{
+.buttoneditmisc{
+    background: #4FB4B0;
+    color: white;
+    padding: 10px 30px;
+    font-size: 12px;
+    float: center; 
+    border:none;
+}
+
+/*edit button in modal*/
+.buttoneditinventory{
     background: #f5cf14;
     color: white;
     padding: 10px 48px;
     font-size: 16px;
-    float: center; 
+    float: center;
+    border:none;
+}
+
+.buttondelete{
+    background: #DC3657;
+    color: white;
+    padding: 10px 48px;
+    font-size: 16px;
+    float: center;
+    border:none;
 }
 
 .buttonyes{
@@ -121,30 +149,33 @@ table, th, td{
     padding: 10px 48px;
     font-size: 16px;
     float: center;
+    border:none;
 }
 
 .buttonno{
-    background-color: #980B84;
+    background-color: #DC3657;
     color: white;
     padding: 10px 40px;
     font-size: 16px;
     float: center;
+    border:none;
 }
 
-.sportButtonWomen {
+.sportButtonWomen{
     text-align: center;
-    margin:0px;   
+    margin:8px;   
     background-color: #DC3657;
     color: white;
     font-size: 30px;
     float: center;
     width: 160px !important;
     height: 160px !important;
+    border:none;
   }
 
-.sportButtonMen {
+.sportButtonMen{
     text-align: center;
-    margin:0px;
+    margin:8px;
     background-color: #4FB4B0;
     color: white;
     font-size: 30px;
@@ -202,7 +233,7 @@ table, th, td{
 .column {
     float: left;
     width: 50%;
-    padding: 0px;
+    padding: 10px;
   }
   
   /* Clear floats after the columns */
@@ -211,3 +242,24 @@ table, th, td{
     display: table;
     clear: both;
   }
+.buttonAdmin{
+    background-color: #f5cf14;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    border:none;
+}
+/* Used for admin page buttons */
+.buttonBk{
+    background-color:  #980B84;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    border:none;
+}
+.buttonSearch{
+	width: 30px;
+        height: 27px;
+}

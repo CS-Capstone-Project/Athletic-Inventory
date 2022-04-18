@@ -1,9 +1,9 @@
 <?php
-
+include_once 'imports.php';
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "equipmentDataBase";
+$dbName = "";
 
 if (!$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName)){
 

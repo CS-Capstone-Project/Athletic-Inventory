@@ -1,23 +1,33 @@
 <?php
-start_session();
-
+session_start();
+$_SESSION;
+include_once 'functions.php';
 include_once 'imports.php';
-
 include_once '/home/capstone/DatabaseInformation/connectToDatabase.php';
 include_once '/home/capstone/DatabaseInformation/dataBaseFunc.php';
-include_once '/home/capstone/DatabaseInformation/functions.php';
 
+$_SESSION['permLevel'];
 
-check_login($conn);
-
-
-
+if ($_SESSION['id'] == "Guest"){
+$_SESSION['permLevel'] = "Guest";
+}
+else{
+$user_data = check_login($conn);
+$_SESSION['permLevel'] = checkPermission($conn);
+}
 
 if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['logout']))
     {
         logout();
     }
-
+    
+if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['sportPicked']))
+    {
+        $_SESSION['sportName'] = $_POST['sport'];
+        $_SESSION['sportTable'] = $_POST['table'];
+        header("Location: inventoryTemplate2.php");
+    }
+    
 ?>
 
   <head lang="en">
@@ -33,9 +43,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['logout']))
 <html>
 
 <head>
- 
-   </head>
+</head>
 <link rel="stylesheet" href="Website.css">
+
+
+
 
 <table class="tablelogo">
   <tr>
@@ -46,8 +58,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['logout']))
       </div>    
       <div>
           <!--logout button-->
+          <?php if ( $_SESSION['permLevel'] == "Admin") { ?> 
+
+<form action="adminPage.php">
+<input type="submit" value="Manage Accounts" class="btn buttonlogout">
+</form>
+
+<?php } ?>
           <form method = 'post' action = 'index.php'>
-          <input type="submit" class="btn buttonlogout" name="logout" value="Log Out"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+	<!-- correct logout button working-->
+          <button type="submit" class="btn buttonlogout" name="logout">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
           </form>
       </div>
       </td>
@@ -73,11 +93,10 @@ if (mysqli_num_rows($result) > 0) {
     
     $sportsName = $row["Sport"]; ?>
     <div class="column">
-  <form action="inventoryTemplate2.php" method="post" id="theBUTTON">
- 
-     <input type="hidden" name="table" value="<?php echo $row["RelatedInventoryName"]?>">
+  <form action="index.php" method="post" id="theBUTTON">
+      <input type="hidden" name="table" value="<?php echo $row["RelatedInventoryName"]?>">
       <input type="hidden" name="sport" value="<?php echo $row["Sport"]?>">
-      <button class="btn sportButtonMen"><?php echo $row["Sport"]?></button>     
+      <button name = "sportPicked" type = "submit" class="btn sportButtonMen"><?php echo $row["Sport"]?></button>     
   </form>
 </div> 
   <?php
@@ -94,19 +113,17 @@ if (mysqli_num_rows($result) > 0) {
 
  <?php
 
-
-$result = $result = selectMensSports($conn);
-
+$result = selectWomensSports($conn);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
     
     $sportsName = $row["Sport"]; ?>
   <div class="column">
-  <form action="inventoryTemplate2.php" method="post" id="theBUTTON">
-     <input type="hidden" name="table" value="<?php echo $row["RelatedInventoryName"]?>">
+  <form action="index.php" method="post" id="theBUTTON">
+      <input type="hidden" name="table" value="<?php echo $row["RelatedInventoryName"]?>">
       <input type="hidden" name="sport" value="<?php echo $row["Sport"]?>">
-     <button class="btn sportButtonWomen"><?php echo $row["Sport"]?></button>   
+      <button name = "sportPicked" type = "submit" class="btn sportButtonWomen"><?php echo $row["Sport"]?></button>     
   </form>
 </div>
  <?php  

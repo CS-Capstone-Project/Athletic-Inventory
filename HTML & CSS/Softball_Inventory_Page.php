@@ -6,8 +6,6 @@
 	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Softball Inventory </title>
 
-
-
 <!--imports google font-->
 <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
 

@@ -58,6 +58,7 @@ table, th, td{
     margin-left: 25%;
     padding: 10px 30px;
     font-size: 16px;
+    border:none;
 }
 
 .buttonBack{
@@ -66,6 +67,7 @@ table, th, td{
     margin-bottom: 10px;
     padding: 10px 40px;
     font-size: 16px;
+    border:none;
 }
 .buttonadd{
     background-color: #f5cf14;
@@ -73,6 +75,7 @@ table, th, td{
     padding: 10px 24px;
     font-size: 16px;
     float: right;    
+    border:none;
 }
 
 .buttonaddinventory{
@@ -80,15 +83,17 @@ table, th, td{
     color: white;
     padding: 10px 40px;
     font-size: 16px;
-    float: center;    
+    float: center;
+    border:none;
 }
 
 .buttoncancel{
-    background-color: #980B84;
+    background-color: #4FB4B0;
     color: white;
     padding: 10px 40px;
     font-size: 16px;
     float: center;
+    border:none;
 }
 
 .buttonedit{
@@ -97,22 +102,25 @@ table, th, td{
     padding: 15px 15px;
     font-size: 10px;
     float: right; 
+    border:none;
 }
 
 .buttoneditinventory{
-    background: #4FB4B0;
-    color: white;
-    padding: 10px 48px;
-    font-size: 16px;
-    float: center; 
-}
-
-.buttondelete{
     background: #f5cf14;
     color: white;
     padding: 10px 48px;
     font-size: 16px;
-    float: center; 
+    float: center;
+    border:none;
+}
+
+.buttondelete{
+    background: #DC3657;
+    color: white;
+    padding: 10px 48px;
+    font-size: 16px;
+    float: center;
+    border:none;
 }
 
 .buttonyes{
@@ -121,17 +129,19 @@ table, th, td{
     padding: 10px 48px;
     font-size: 16px;
     float: center;
+    border:none;
 }
 
 .buttonno{
-    background-color: #980B84;
+    background-color: #DC3657;
     color: white;
     padding: 10px 40px;
     font-size: 16px;
     float: center;
+    border:none;
 }
 
-.sportButtonWomen {
+.sportButtonWomen{
     text-align: center;
     margin:8px;   
     background-color: #DC3657;
@@ -140,9 +150,10 @@ table, th, td{
     float: center;
     width: 160px !important;
     height: 160px !important;
+    border:none;
   }
 
-.sportButtonMen {
+.sportButtonMen{
     text-align: center;
     margin:8px;
     background-color: #4FB4B0;

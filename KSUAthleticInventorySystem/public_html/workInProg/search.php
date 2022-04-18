@@ -1,34 +1,30 @@
-
 <?php
-
-
+session_start();
+include_once 'functions.php';
+include_once 'imports.php';
 include_once '/home/capstone/DatabaseInformation/connectToDatabase.php';
 include_once '/home/capstone/DatabaseInformation/dataBaseFunc.php';
-include_once '/home/capstone/DatabaseInformation/functions.php';
-
 ?>
 
-<html>
-	
+<html>	
 	
 
-
-<!--CSS File Link-->
 <link rel="stylesheet" href="Website.css">
 
 <?php
+	//creates variables based on text entered into search field
+
 $item = $_POST['search'];
-$table = $_POST['table'];
-$sport = $_POST['sport'];
+$tableName = $_SESSION['sportTable'];
 
+#$sql = "SELECT * FROM $table WHERE item_name LIKE '%$item%'";
 
-$sql = "SELECT * FROM $table WHERE item_name='$item'";
+$result = searchForItem($conn, $tableName, $item);
 
-
-$result = mysqli_query($conn, $sql);
 ?>
 
 <h1>Items Found in Search</h1>
+<div class="container">
         <div class="table-responsive">
         <table class="table">
             <thead>
@@ -61,7 +57,7 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 </thread>
 </table>
-
+</div>
 <form action="inventoryTemplate2.php" method="POST">
 <input type="hidden" name="sport" value="<?php echo $sport; ?>">
 <input type="hidden" name="table" value="<?php echo $table; ?>">
